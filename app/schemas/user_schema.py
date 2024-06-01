@@ -1,4 +1,5 @@
 from pydantic import BaseModel, EmailStr
+from typing import Optional
 
 
 class UserBase(BaseModel):
@@ -7,8 +8,8 @@ class UserBase(BaseModel):
 
 class UserCreate(UserBase):
     password: str
-    access_key: str | None = None
-    secret_key: str | None = None
+    access_key: Optional[str] = None
+    secret_key: Optional[str] = None
 
 
 class UserInDBBase(UserBase):
@@ -17,9 +18,13 @@ class UserInDBBase(UserBase):
 
 
 class User(UserInDBBase):
-    access_key: str | None = None
-    secret_key: str | None = None
+    access_key: Optional[str] = None
+    secret_key: Optional[str] = None
 
 
 class UserInDB(UserInDBBase):
+    password: str
+
+
+class UserSignIn(UserBase):
     password: str

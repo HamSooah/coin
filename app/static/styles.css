@@ -1,0 +1,93 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #c4c4c4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #28293d;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.header, .nav, .main {
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    color: #f9f9f9;
+}
+
+.user-controls a {
+    color: #c4c4c4;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.nav a {
+    color: #f9f9f9;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.chart, .account-info, .trade-record, .bot-controls {
+    background-color: #3b3b4f;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.chart h2, .account-info h3, .trade-record h3, .bot-controls h2 {
+    margin: 0 0 10px 0;
+    color: #f9f9f9;
+}
+
+.bot-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mode-switch button, .settings button {
+    background-color: #565676;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.settings label {
+    margin-right: 10px;
+}
+
+.settings input {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+}
